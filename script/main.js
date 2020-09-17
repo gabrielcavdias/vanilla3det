@@ -39,7 +39,7 @@ function criarFichas(){
             conteudo+=`PV extra x${totaldepontos}<br>`
         }
         conteudo+= `<br><p>PV</p> ${(res*5)+(totaldepontos*10)}/${(res*5)+(totaldepontos*10)} <br> <p>PM</p> ${res*5}/${res*5} </div>`
-        output.innerHTML = conteudo
+        output.innerHTML+= conteudo
         totaldepontos = document.getElementById('qntpontos').value
     }
 }
